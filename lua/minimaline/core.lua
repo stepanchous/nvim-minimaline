@@ -84,7 +84,7 @@ function M.build()
         style,
         mode_icon,
         mode,
-        git_branch,
+        branch,
         lsp_diagnostics,
         file_icon,
         file_name,
