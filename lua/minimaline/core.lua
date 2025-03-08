@@ -71,7 +71,7 @@ function M.build()
     local mode_icon = " "
 --     local mode_icon = "󰰑 "
     local mode = "%{%v:lua.require'minimaline.core'.get_mode()%}"
-    local git_branch = "%{%v:lua.require'minimaline.git'.get_git_branch()%}"
+    local branch = "%{%v:lua.require'minimaline.scv'.get_sc_branch()%}"
     local lsp_diagnostics = "%{%v:lua.require'minimaline.lsp'.get_diagnostics()%}"
     local file_icon = "%{%v:lua.require'minimaline.core'.get_icon()%}"
     local file_name = "%t   %n"
