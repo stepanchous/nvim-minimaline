@@ -19,7 +19,7 @@ local function get_arc_branch_impl()
     end
 end
 
-local function M.get_arc_branch()
+function M.get_arc_branch()
     branch = get_arc_branch_impl()
     return branch ~= "" and "  󰊢  " .. vim.trim(branch) or ""
 end
