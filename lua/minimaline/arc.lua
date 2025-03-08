@@ -9,7 +9,7 @@ local function get_process_output(cmd)
 end
 
 local function get_arc_branch_impl()
-    local branch = vim.fn.system("arc info 2> /dev/null | awk '/^branch:/{print $2}")
+    local branch = vim.fn.system("arc info 2> /dev/null | awk '/^branch:/{print $2}'")
     local hash = vim.fn.system("arc info 2> /dev/null | awk '/^hash:/{print $2}'")
 
     if branch ~= hash then
